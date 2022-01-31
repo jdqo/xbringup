@@ -51,7 +51,7 @@ else
     if [[ 1 -eq $(echo "${ids_found}" | wc -w) ]]; then
         if [[ ${id_active} -eq ${ids_found} ]]; then
             # Only one instance of given WM_CLASS and it's currently active.
-            xdotool winddowminimize "${ids_found}"
+            xdotool windowminimize "${ids_found}"
             exit
         else
             # Only one instance of given WM_CLASS but it's not currently active.
